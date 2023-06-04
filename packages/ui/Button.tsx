@@ -1,1 +1,1 @@
-export const Button = () => <button>Boop</button>;
+export const Button = () => <button>Click</button>;

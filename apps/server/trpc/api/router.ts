@@ -5,13 +5,13 @@ import type { Application } from "express";
 
 import { router } from "trpc";
 
-import { user } from "./resolvers";
+import { user, test } from "./resolvers";
 
 export type AppRouter = typeof appRouter;
 
 export type Context = inferAsyncReturnType<typeof createContext>;
 
-const appRouter = router({ user });
+const appRouter = router({ user, test });
 
 const createContext = ({ req, res }: CreateExpressContextOptions) => ({
   req,
