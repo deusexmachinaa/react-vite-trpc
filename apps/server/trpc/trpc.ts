@@ -8,3 +8,4 @@ export const { middleware, router } = t;
 
 export const userProcedure = t.procedure;
 export const testProcedure = t.procedure;
+export const urlProcedure = t.procedure;
